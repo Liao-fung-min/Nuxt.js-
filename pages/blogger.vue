@@ -20,8 +20,8 @@ export default {
          console.log(res);
          //包含其它物件
          console.log(res.data); 
-         //選取 100 筆資料
-        return { posts: res.data };
+         //選取 前五筆資料
+        return { posts: res.data.slice(0,5)};
       });
   },
 };
