@@ -113,17 +113,23 @@ export default {
    */
   modules: [
     '@nuxtjs/proxy',
-   ],
-   proxy: [
-     // Proxies /api/products/*/**.json to http://127.0.0.1:8080
-     'http://127.0.0.1:8080/api/products/*/**.json',
-   ],
-  axios: {
-  },
-  
+  ],
+  proxy: [
+    // Proxies /api/products/*/**.json to http://127.0.0.1:8080
+    'http://127.0.0.1:8080/api/products/*/**.json',
+  ],
+  axios: {},
+
   /*
    ** Build configuration
    ** See https://nuxtjs.org/api/configuration-build/
    */
-  build: {}
+  //觀看網站分析，看看網站有哪些不需要的內容https://medium.com/@zx2515296964/nextjs%E7%AD%86%E8%A8%98-%E7%B6%B2%E7%AB%99%E5%84%AA%E5%8C%96-%E6%8F%90%E5%8D%87%E9%80%9F%E5%BA%A6-%E8%AE%93%E4%BD%A0%E7%9A%84%E7%B6%B2%E7%AB%99%E9%A3%9B%E8%B5%B7%E4%BE%86%E5%90%A7-3d37a7e7db2f
+  // build: {
+  //   // ... 其餘設定 ...
+  //   analyze: true,
+  //   assetFilter: function (assetFilename) {
+  //     return assetFilename.endsWith('.js');
+  //   }
+  // }
 }
